@@ -56,7 +56,7 @@ function setAttributes(el, attrs) {
 
 function generateGameBoard() {
     resetParameters(); // itt reseteljük a játékterek ha az már létezett akkor visszaállítjuk eredeti állapotába.
-    var mainBoard = document.getElementById('tic-tac-to-board');
+    var mainBoard = document.getElementById('tic-tac-toe-board');
     mainBoard.innerHTML = ''; // reseteljük a szöveget a divből
     mainBoard.classList.add('active');
 
@@ -76,7 +76,7 @@ function generateGameBoard() {
                 'onclick': 'markingCheck(this)'
             });
 
-            document.getElementById('tic-tac-to-board').appendChild(btn); // divhez füzzük hozzá a kattintható területeket
+            mainBoard.appendChild(btn); // divhez füzzük hozzá a kattintható területeket
         }
     }
 }

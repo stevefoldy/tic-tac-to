@@ -58,7 +58,7 @@ body {
     outline: none;
 }
 
-#tic-tac-to-board {
+#tic-tac-toe-board {
     display: flex;
     flex-wrap: wrap;
     min-height: 375px;
@@ -68,7 +68,7 @@ body {
     border: 10px solid #f1f1f1;
 }
 
-#tic-tac-to-board.active {
+#tic-tac-toe-board.active {
     background: transparent;
     border: 0;
 }
